@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>receipt</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        .receipt-container{
+          width: 75%;
+          height: auto;
+          border: 1px solid rgb(39, 38, 38);
+          margin: 0 auto;
+          background-color: white;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .brand-logo{
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+        .receipt-header{
+         border-bottom: 1px dashed grey;
+        }
+        .brand-title{
+            text-align: center;
+        }
+        .brand-address{
+          text-align: right;
+        }
+        .brand-mobile{
+            text-align: right;
+        }
+        .receipt-title{
+            text-align: center;
+            font-size: 30px;
+            margin: 40px 0;
+        }
+        .receipt-body{
+            position: relative;
+           
+        }
+        .receipt-detail{
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .receipt-detail-key{
+            color: gray;
+            width: 30%;
+        }
+        .receipt-detail-value{
+            font-weight: bold;
+            border-bottom: 1px dashed gray;
+            width: 30%;
+        }
+        .stamp{
+            width: 150px;
+            position: absolute;
+            right: 150px;
+            bottom: -130px;
+            transform: rotate(-30deg);
+        }
+        .accountant-signature{
+            text-align: right;
+            margin-top: 100px;
+        }
+        .receipt-footer{
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+            background-color: rgb(224, 154, 69);
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt-container">
+    <div class="receipt-header">
+        <img src="logo.png" class="brand-logo">
+        <h2 class="brand-title">Road To Code</h2>
+        <p class="brand-address">404,Above Hospital,<br>Shewalewadi,<br>Pune - 412307.</p>
+        <p class="brand-mobile">
+            +91-1234567890
+        </p>
+    </div>
+    <div class="receipt-body">
+     <h3 class="receipt-title">
+        Payment Receipt
+     </h3>
+        <div class="receipt-detail">
+        <div class="receipt-detail-key">
+            Receipt No.:
+        </div>
+            <div class="receipt-detail-value">
+                12345789
+            </div>
+            </div>
+
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    Ammount :
+                </div>
+                    <div class="receipt-detail-value">
+                        5000/-
+                    </div>
+                    </div>
+
+                    <div class="receipt-detail">
+                        <div class="receipt-detail-key">
+                            Payment Mode
+                        </div>
+                            <div class="receipt-detail-value">
+                                Online
+                            </div>
+                            </div>
+
+                            <div class="receipt-detail">
+                                <div class="receipt-detail-key">
+                                    Payment Date:
+                                </div>
+                                    <div class="receipt-detail-value">
+                                        3 june 2024
+                                    </div>
+                                    </div>
+        </div>
+
+        <img src="pngegg.png" class="stamp"/>
+        <p class="accountant-signature">
+            Accountant Signature
+            <br><br>
+        </p>
+        <hr>
+        <p>
+            This is a computer generated receipt and does not required any
+        </p>
+        <div class="receipt-footer">
+           Thank you for your payment.
+            </div>
+    </div>
+</body>
+</html>
